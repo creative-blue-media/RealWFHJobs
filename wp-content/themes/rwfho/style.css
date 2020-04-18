@@ -6,4 +6,17 @@
 
 body {
     color: aqua;
+    position: relative;
+}
+
+#header-image {
+    background-color: black;
+    position: absolute;
+    right: 0; 
+    left: 0; 
+
+}
+
+img {
+    width: 100%;
 }
