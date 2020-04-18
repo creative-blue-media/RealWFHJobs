@@ -8,15 +8,35 @@ body {
     color: aqua;
     position: relative;
 }
-
+#header-wrapper {
+    height: 100vh;
+    position: relative;
+}
 #header-image {
     background-color: black;
-    position: absolute;
+    /* position: absolute;
     right: 0; 
-    left: 0; 
+    left: 0;  */
+    overflow: auto;
 
 }
 
+#header-line  {
+    background: rgba(215, 141, 50, .5);
+    color: white;
+    position: relative;
+    height: 10vh;
+    text-align: center;
+}
+
+#header-line h3 {
+    /* display: block; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 img {
-    width: 100%;
+    width: 100vw;
 }
