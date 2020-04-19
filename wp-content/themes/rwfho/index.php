@@ -10,7 +10,7 @@
         <div class="col-md-4">
             <img src="<?php echo get_theme_file_uri('/assets/images/man.jpg')?>" alt="likes pictures"/>
         </div>
-        <div class="col-md-4 text-content">
+        <div class="col-md-4 d-flex text-content justify-content-center align-items-center">
         <h4>Legitimate work from home opportunities for anyone looking to make money from home.
              <span>
                  <a href="https://www.facebook.com/hashtag/realwfhjobs">#realwfhjobs
@@ -34,11 +34,15 @@
     //while(have_posts()) {
         //the_post();
         ?>
-        <h1><a href="<?php 
+        <!-- <h1><a href=" -->
+        <?php 
         //the_permalink()
-        ?>"><?php 
+        ?>
+        <!-- "> -->
+        <?php 
         //the_title()
-        ?></a></h1>
+        ?>
+        <!-- </a></h1> -->
         <?php 
         //the_content();
     //}  

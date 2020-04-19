@@ -56,12 +56,9 @@ img#brand {
 }
 
 .likes-acknowledgement .text-content h4{
-    position: absolute;
-    left: 50%; 
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 72%;
+    padding: 2em;
+    font-size: 1.3em;
+    /* width: 72%; */
 }
 
 .text-content .facebook-link {
@@ -79,8 +76,14 @@ footer li {
     margin-right: .3em;
 }
 footer {
+    background: rgb(153, 171, 112);
+    color: white;
     height: 25vh;
     position: relative;
+}
+
+footer a {
+    color: white;
 }
 
 footer .site-footer-inner {
