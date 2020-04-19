@@ -41,10 +41,7 @@
     </form>
   </div>
 </nav>
-<div id="header-wrapper">
-<div id="header-image"><img  src="<?php echo get_theme_file_uri('/assets/images/rwfho-header.png') ?>"/></div>
 
-<div id="header-line"><h3>Everything is better in your pajamas</h3></div>
 </div>
 
 

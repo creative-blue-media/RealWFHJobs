@@ -3,23 +3,22 @@
     Author: CBM
     Version: 1.0
 */
-
+ul {
+    padding: 0px;
+}
 body {
-    color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
     position: relative;
 }
-#header-wrapper {
+/* #header-wrapper {
     height: 100vh;
     position: relative;
 }
 #header-image {
     background-color: black;
-    /* position: absolute;
-    right: 0; 
-    left: 0;  */
     overflow: auto;
 
-}
+} */
 img#brand {
     width: 80px;
 }
@@ -27,18 +26,66 @@ img#brand {
     background: rgba(215, 141, 50, .5);
     color: white;
     position: relative;
-    height: 10vh;
+    height: 20vh;
     text-align: center;
 }
 
 #header-line h3 {
-    /* display: block; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+   
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-img {
+} 
+#header-image img {
     width: 100vw;
+}
+
+.likes-acknowledgement .text-content {
+    position: relative; 
+}
+
+.likes-acknowledgement img{
+    width: 100%;
+
+}
+
+.likes-acknowledgement .col-md-4 {
+    padding: 0px;
+}
+
+.likes-acknowledgement .text-content h4{
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 72%;
+}
+
+.text-content .facebook-link {
+    display: block;
+    /* text-align: right;
+    margin-right: 1em; */
+}
+
+footer li {
+    list-style: none;
+}
+.social-icons-list li {
+    display: inline-block;
+    margin-left: .3em;
+    margin-right: .3em;
+}
+footer {
+    height: 25vh;
+    position: relative;
+}
+
+footer .site-footer-inner {
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
 }
