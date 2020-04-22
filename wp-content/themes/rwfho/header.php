@@ -15,17 +15,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/rwfho">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href=" <?php echo site_url('/')?>">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="opportunities">Opportunities</a>
+        <a class="nav-link" href="<?php echo site_url('/opportunities')?>">Opportunities</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Resources
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="resources" >Resource 1</a>
+          <a class="dropdown-item" href="<?php echo site_url('/resources')?>" >Resource 1</a>
           <a class="dropdown-item" href="https://instabio.cc/realwfhjobs" target="_blank">RealWFHjobs</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">R3</a>
