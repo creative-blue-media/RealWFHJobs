@@ -1,5 +1,4 @@
-<footer>
-
+<footer id="footer">
     <div class="site-footer-inner container--narrow container">
 
       <div class="group row">
