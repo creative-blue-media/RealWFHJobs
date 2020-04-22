@@ -11,45 +11,57 @@ function console_log($output, $with_script_tags = true) {
     get_header();
     while(have_posts()) {
         the_post();?>
-        <h1><?php 
-            $title=get_the_title(); 
-            echo $title;
-            if(strtolower($title) == 'opportunities') {
-                ?>
-                <h1>Opportunities Stuff goes here</h1>
+        <div class="pages-header d-flex align-items-center justify-content-center">
+        <h1>
+            <?php $title=get_the_title(); 
+            echo $title; ?>
+        </h1>
+        </div>
+        <?php 
         
-                <?php 
-
+            if(strtolower($title) == 'opportunities') {
+        ?>
+                <?php
                     $theParent = wp_get_post_parent_id(get_the_ID());                  
                     if($theParent) {
                         $findChildrenOf = $theParent;
                     } else {
                         $findChildrenOf = get_the_ID(); 
                     }
-                    wp_list_pages(array(
-                        'title_li' => NULL,
-                        'child_of'=>$findChildrenOf//,
-                        // ''=>''
-                    
-                    ));
-                
-                
-                ?>
+                 ?>
+
+                <div class="page-content">
+                    <?php the_content() ?>
+                </div>
+
+                <!-- <div class="d-flex justify-content-center">
+                    <ul class="opportunities-list"> -->
+                        <?php
+                        
+                        // wp_list_pages(array(
+                        //     'title_li' => NULL,
+                        //     'child_of'=>$findChildrenOf//,
+                        //     // ''=>''
+                        
+                        // ));
+                        ?>
+                    <!-- </ul>
+                </div> -->
         
-                <?php
+            <?php
             } else {
-                ?>
+            ?>
 
                 <h1>Non Opportunities Pages here</h1>
 
-                <?php
+            <?php
             }
-        ?>
-        </h1>
+            ?>
+        
         <?php $content= get_the_content(); 
-            console_log($content);
+            // console_log($content);
             
-            echo substr($content,0,100);;
+            // echo substr($content,0,100);;
         ?>
  <?php   } 
  get_footer(); 

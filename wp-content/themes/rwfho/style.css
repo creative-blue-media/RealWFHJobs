@@ -92,3 +92,55 @@ footer .site-footer-inner {
     top: 50%; 
     transform: translate(-50%, -50%);
 }
+
+/* .opportunity-list > ul {
+    position: absolute;
+} */
+ul.opportunities-list li {
+    list-style: none;
+}
+
+.pages-header {
+    background: url('assets/images/many-doors.jpg');
+    background-position-y: 38%;
+    height: 60vh;
+    color: white;
+}
+
+.page-content * {
+    padding: 0px !important;
+    margin: 0px !important;
+    background: url('assets/images/page-content-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-content h3.quote span {
+    font-size: 20px;
+}
+
+.page-content h3 {
+    height: 28vh;
+    background: rgba(5, 5, 5, .3);
+    color: white;
+}
+
+.page-content .final-cards {
+    height: 28vh;
+    background: rgba(0, 0, 0, .5) !important;
+   
+}
+
+.page-content .final-cards.after {
+    border-left: 1px solid white;
+}
+
+.page-content .opportunity-section {
+    background: rgba(255,255,255,1);
+}
+
+.page-content .opportunity-section * {
+    background: rgba(255,255,255,1);
+}
+    
