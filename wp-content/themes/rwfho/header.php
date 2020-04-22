@@ -14,10 +14,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item <?php if(is_home()) echo ' active' ?>">
         <a class="nav-link" href=" <?php echo site_url('/')?>">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if(is_page('opportunities')) echo ' active' ?>">
         <a class="nav-link" href="<?php echo site_url('/opportunities')?>">Opportunities</a>
       </li>
       <li class="nav-item dropdown">
@@ -25,7 +25,7 @@
           Resources
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('/resources')?>" >Resource 1</a>
+          <a class="dropdown-item" href="<?php echo site_url('/getting-paid')?>" >Getting Paid</a>
           <a class="dropdown-item" href="https://instabio.cc/realwfhjobs" target="_blank">RealWFHjobs</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">R3</a>
