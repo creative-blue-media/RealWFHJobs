@@ -11,7 +11,7 @@ function console_log($output, $with_script_tags = true) {
     get_header();
     while(have_posts()) {
         the_post();?>
-        <div class="pages-header d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center pages-header">
         <h1>
             <?php $title=get_the_title(); 
             echo $title; ?>

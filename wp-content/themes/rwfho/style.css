@@ -101,11 +101,22 @@ ul.opportunities-list li {
 }
 
 .pages-header {
+    position: relative;
     background: url('assets/images/many-doors.jpg');
     background-position-y: 38%;
     height: 60vh;
     color: white;
 }
+
+.pages-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.2), rgba(169,160,160,.7));;
+  }
 
 div.page-content * {
     padding: 0;
@@ -120,14 +131,24 @@ div.page-content * {
     font-size:vi;
 }
 
+
 .page-content .quote {
     min-height: 28vh;
     padding: 2em;
     padding:2em;
-    background: rgba(5, 5, 5, 0.3);
+    background: black;
     color: white;
 }
 
+.page-content .quote:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    background-image: linear-gradient(to left, rgba(0,0,0,.2), rgba(255,255,255 .7));
+}
 .page-content .quote-by {
     background: rgba(5, 5, 5, 0.3);
     color: white;
