@@ -107,8 +107,8 @@ ul.opportunities-list li {
     color: white;
 }
 
-.page-content * {
-    padding: 0px !important;
+div.page-content * {
+    padding: 0;
     margin: 0px !important;
     background: url('assets/images/page-content-background.jpg');
     background-attachment: fixed;
@@ -116,19 +116,27 @@ ul.opportunities-list li {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.page-content h3.quote span {
-    font-size: 20px;
+.page-content h3.quote {
+    font-size:vi;
 }
 
-.page-content h3 {
-    height: 28vh;
-    background: rgba(5, 5, 5, .3);
+.page-content .quote {
+    min-height: 28vh;
+    padding: 2em;
+    padding:2em;
+    background: rgba(5, 5, 5, 0.3);
+    color: white;
+}
+
+.page-content .quote-by {
+    background: rgba(5, 5, 5, 0.3);
     color: white;
 }
 
 .page-content .final-cards {
     height: 28vh;
     background: rgba(0, 0, 0, .5) !important;
+    color: white;
    
 }
 
